@@ -1,0 +1,13 @@
+.carta{
+    width: 40vh !important;
+    border-radius: 10px!important;
+    background-color: black!important;
+    color: white;
+    opacity: 95%;
+    
+}
+.imagencarta{
+    background-size: cover !important;
+    opacity: 80%;
+    border-radius: 45%!important;
+}
