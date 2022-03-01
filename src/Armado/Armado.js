@@ -35,7 +35,7 @@ const {IngreList, setIngreList, IngreUser, setIngreUser,
                             <img src={require(`../assets/img/ingredientes/${ingre.imagen}.png`)} className='imgingre'/>
                                <span> {ingre.nombre}</span>
                                 <span > ${ingre.precio}</span>
-                                <i class="bi bi-trash2" onClick={()=>borrarElemento(ingre.id)}></i>
+                                <i className="bi bi-trash2 tacho" onClick={()=>borrarElemento(ingre.id)}></i>
                             </button>
                         ))}
                     
