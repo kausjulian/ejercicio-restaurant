@@ -1,3 +1,10 @@
 .slider{
     background-color: black;
+
 }
+.image{
+    width:100%!important;
+}
+.animate__animated {
+    --animate-duration: 2s;
+  }

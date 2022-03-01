@@ -2,3 +2,26 @@
     background-color: black;
     color: white;
 }
+.boton{
+    height: 10%!important;
+    border-radius: 3vh!important;
+    font-size: 90%!important;
+    width: 75%!important;
+}
+.imgingre{
+    width:10%;
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .imgingre{
+        width:10%;
+        display: block;
+    }
+
+
+}
+.botoncomprar{
+    width: 12vh!important;
+}

@@ -7,6 +7,17 @@ const RestoProvider = ({children}) => {
     const[IngreList, setIngreList] = useState([])
     const[IngreUser, setIngreUser] = useState([])
     const[Suma, setSuma] = useState(0)
+    const [Burgers,setBurgers] = useState([])  
+    
+    //pedido de la apy
+      const getBurgers = async (tipo) =>{
+        const results = await axios.get(`https://apipdtc.herokuapp.com/bulldog/${tipo}`)
+        // console.log(results.data)
+        setBurgers(results.data)
+    }
+    
+    
+    
     //pedido de la apy
     const getIngre = async () =>{
         const results = await axios.get("https://apipdtc.herokuapp.com/bulldog/ingredientes")
@@ -30,6 +41,7 @@ const borrarElemento = id =>{
      useEffect(()=>{
         getIngre()
         setIngreUser([])
+        
     },[])
 
     //useefect que ejecuta la suma cada vez que el usuario suma un elemento (x eso depende de IngreUser)
@@ -39,7 +51,7 @@ const borrarElemento = id =>{
     
     return (
         <RestoContext.Provider value={{IngreList, setIngreList, IngreUser, setIngreUser, 
-        Suma, setSuma, getIngre, obtenerIngre, borrarElemento, sumarIngre}}>
+        Suma, setSuma, getIngre, obtenerIngre, borrarElemento, sumarIngre,getBurgers,Burgers}}>
             {children}
         </RestoContext.Provider>
 

@@ -1,4 +1,14 @@
-.cardpremium{
-    width: 35% !important;
-    
+.imagen{
+    opacity: 80%;
+}
+.cartapremium{
+    transition:all .5s ease; /* Safari y Chrome */
+    flex-wrap: nowrap!important;
+}
+.cartapremium:hover{
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15)
 }

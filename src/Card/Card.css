@@ -1,13 +1,41 @@
 .carta{
-    width: 40vh !important;
+    /* width: 23% !important; */
     border-radius: 10px!important;
     background-color: black!important;
     color: white;
     opacity: 95%;
+    transition:all .5s ease;
     
+}
+.carta:hover{
+    opacity: 100%;
+    opacity: 100%;
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05)
+
 }
 .imagencarta{
     background-size: cover !important;
     opacity: 80%;
     border-radius: 45%!important;
+    transition:all .5s ease;
 }
+
+.imagencarta:hover{
+    opacity: 100%;
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05)
+
+}
+
+.card-text{
+    height: 40%;
+    margin-top: 10%;
+}
+
